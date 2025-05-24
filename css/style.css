@@ -1,0 +1,170 @@
+body {
+  background-color: #e7e7e7;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: black;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h3,
+h4 {
+  font-weight: 600;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.section-padding {
+  padding-block: 1.1rem;
+}
+
+.section-border {
+  border-block: 1px solid #d3d3d3;
+}
+
+.navbar-brand img {
+  width: 90px;
+  height: auto;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+  font-weight: 900;
+  --bs-nav-link-color: black;
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+}
+
+.nav-link:hover {
+  color: orange;
+  background-color: #d3d3d3;
+}
+
+.nav-link.icon:hover {
+  background-color: transparent;
+}
+
+.badge {
+  background-color: #d3d3d3;
+  color: #5c5c5c;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active-filter {
+  font-weight: 600;
+  color: orange;
+}
+
+.active-filter .badge {
+  background-color: orange;
+}
+
+.filter:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.filter:hover .badge {
+  background-color: orange;
+}
+
+.filter p {
+  margin-bottom: 0.6rem;
+}
+
+.brand-filter a {
+  text-transform: uppercase;
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: contain;
+}
+
+.card {
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  outline: 2px solid orange;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+footer {
+  background: #f8f8f8;
+}
+
+.footer-content div:not(:last-child) {
+  border-right: 1.5px solid #d3d3d3;
+}
+
+.footer-content a {
+  display: block;
+  color: black;
+}
+
+.footer-content a:hover {
+  color: orange;
+}
+
+.footer-content h4 {
+  margin-bottom: 1.3rem;
+}
+
+.footer-icons a {
+  padding: 5px 10px;
+  background-color: orange;
+  margin-right: 10px;
+  display: inline;
+}
+
+.footer-icons a:hover {
+  background-color: gray;
+}
+
+.footer-icons i {
+  color: white;
+}
+
+.filter-button {
+  background-color: gray;
+  color: white;
+  font-weight: 500;
+  padding: 5px 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #filter-section {
+    display: none;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 100%;
+    background-color: #e7e7e7;
+    z-index: 999;
+    padding: 1rem;
+  }
+
+  #filter-section.filter-visible {
+    display: block !important;
+  }
+}
